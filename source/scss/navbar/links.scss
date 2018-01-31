@@ -1,0 +1,59 @@
+@import "../variables.scss";
+
+@if $enable {
+
+  nav.menu li {
+
+    margin-left: 50px;
+    display: inline-block;
+    background-color: $nav-button-bg;
+    padding: 10px;
+    -webkit-transition: background-color 1s;
+    -moz-transition: background-color 1s;
+    -o-transition: background-color 1s;
+    transition: background-color 1s;
+
+    &:hover {
+      background-color: $bg-color-hover;
+    }
+
+    a {
+      color: $color;
+      text-decoration: none;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
+
+      &:hover {
+        color: #000000;
+      }
+    }
+  }
+}
+
+@else {
+
+  nav.menu li {
+    margin-left: 50px;
+    display: inline-block;
+    background-color: $nav-button-bg1;
+    padding: 10px;
+    -webkit-transition: background-color 1s;
+    -moz-transition: background-color 1s;
+    -o-transition: background-color 1s;
+    transition: background-color 1s;
+
+    &:hover {
+      background-color: $bg-color-hover1;
+    }
+
+    a {
+      color: $color;
+      text-decoration: none;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
+
+      &:hover {
+        color: #000000;
+      }
+    }
+  }
+
+}

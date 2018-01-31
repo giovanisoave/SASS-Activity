@@ -1,0 +1,41 @@
+@import "../variables.scss";
+
+@if $enable {
+
+  header.top-header {
+    border: $border;
+    padding: $padding;
+
+    &:before {
+      color: #0c11b2;
+      float: right;
+      content: "1st Theme - Module 4 activity by Giovani Soave";
+    }
+  }
+
+  header img {
+    background-color: $header-brand-bg;
+    padding: $padding;
+  }
+}
+
+
+
+@else {
+  header.top-header {
+    border: $border1;
+    padding: $padding1;
+
+    &:before {
+      color: #ff9409;
+      float: right;
+      content: "2nd Theme - Module 4 activity by Giovani Soave";
+    }
+  }
+
+  header img {
+    background-color: $header-brand-bg1;
+    padding: $padding;
+  }
+}
+
